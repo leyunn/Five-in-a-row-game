@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameUIController">
+   <children>
+      <Pane fx:id="pane" prefHeight="550.0" prefWidth="750.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eebb78" height="450.0" layoutX="50.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="450.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="420.0" layoutX="65.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="420.0" />
+            <Canvas fx:id="boardCanvas" height="420.0" layoutX="65.0" layoutY="65.0" onMouseClicked="#handleBoardClicked" width="420.0" />
+            <Rectangle fx:id="blackRectangle" arcHeight="5.0" arcWidth="5.0" fill="#d7ffef" height="70.0" layoutX="530.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="200.0" />
+            <Rectangle fx:id="whiteRectangle" arcHeight="5.0" arcWidth="5.0" fill="#d1e2fc" height="70.0" layoutX="530.0" layoutY="358.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Circle fill="#303539" layoutX="688.0" layoutY="289.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <VBox layoutX="509.0" layoutY="35.0" prefHeight="186.0" prefWidth="241.0" style="-fx-padding: 15; -fx-spacing: 20;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Five in a Row" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bangla MN" size="31.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="restartButton" mnemonicParsing="false" onAction="#handleRestartButtonClicked" text="Restart" />
+                  <Button fx:id="undoButton" mnemonicParsing="false" onAction="#handleUndoButtonClicked" text="Undo" />
+               </children>
+            </VBox>
+            <Circle fill="#eeeeee" layoutX="688.0" layoutY="393.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text layoutX="567.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Black">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="567.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="White">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</HBox>
