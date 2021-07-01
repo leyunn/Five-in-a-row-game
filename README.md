@@ -12,4 +12,4 @@
 
 - Demo picture:
 
-  ![gameImage](/Users/leyun/Five-in-a-row-game/gameImage.png)
+  ![gameImage](gameImage.png)
